@@ -19,6 +19,12 @@ A UI tool can be pointed to a folder and if it contains images, to fetch
 the names of all of the images, pick the middle image as primary, and 
 allow for backward and forward scrolling through the images.  
 
+### Expansion:  
+Assuming 100 000 photos in a folder - they are all chronologically sequenced.  Pick the middle photo and 10 photos either side of it.  Display the 
+main photo, and a small reel below of the other 10.  Moving right means that one or more off of the left side go away, and one ore more are added to the right with the main now being the root.  
+
+That is the tip off: 'root'.  I suspectt that I'll use a tree.  
+
 ## Phase II:  
 A carosel of images should be displayed under the current image, reflecting
 the +X and -X images from its position.  
@@ -30,4 +36,5 @@ within the carosel.
 ## Phase IV:  
 Fast Forward/Reverse - avoid long stretches of nearly static images and 
 only zoom to the changes which is where the cool stuff happens.  
+
 
