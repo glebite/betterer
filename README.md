@@ -23,7 +23,9 @@ allow for backward and forward scrolling through the images.
 Assuming 100 000 photos in a folder - they are all chronologically sequenced.  Pick the middle photo and 10 photos either side of it.  Display the 
 main photo, and a small reel below of the other 10.  Moving right means that one or more off of the left side go away, and one ore more are added to the right with the main now being the root.  
 
-That is the tip off: 'root'.  I suspectt that I'll use a tree.  
+That is the tip off: 'root'.  I suspect that I'll use a tree.  
+
+THe root will be the main photo.  When one side or another becomes too unbalanced, it will adjust.  (Thinking about how to do this.)
 
 ## Phase II:  
 A carosel of images should be displayed under the current image, reflecting
