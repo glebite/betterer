@@ -1,5 +1,8 @@
 """
 skeleton.py - 
+
+So there will be potentially from 0 to 1000 images 
+in a folder - each chronologically ordered.
 """
 
 
@@ -12,7 +15,7 @@ class Skeleton:
         pass
 
     def add(self):
-        """
+        """add - should add to left or right of the main
         """
         pass
 
@@ -20,6 +23,10 @@ class Skeleton:
         """
         """
         pass
+
+    def remove(self):
+        """
+        """
 
 
 if __name__ == "__main__":
