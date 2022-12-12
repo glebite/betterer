@@ -6,6 +6,9 @@ in a folder - each chronologically ordered.
 """
 
 
+SIDE_BUFFER = 5
+
+
 class Skeleton:
     """
     """
