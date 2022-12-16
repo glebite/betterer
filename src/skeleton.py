@@ -18,7 +18,7 @@ class Skeleton:
         """
         logging.info(f'Creating Skeleton')
 
-    def add(self, item
+    def add(self, item)
         """add - should add to left or right of the main
         """
         logging.info(f'Adding {item=}')
@@ -35,4 +35,5 @@ class Skeleton:
 
 
 if __name__ == "__main__":
-    pass
+    x = Skeleton()
+    x.add('hello')
