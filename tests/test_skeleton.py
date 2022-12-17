@@ -29,3 +29,6 @@ def test_add_one_more():
 def test_cycle_one_hundred():
     pass
 
+
+def test_remove_one():
+    pass
