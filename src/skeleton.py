@@ -5,7 +5,7 @@ So there will be potentially from 0 to 1000 images
 in a folder - each chronologically ordered.
 """
 import logging
-
+from collections import deque
 
 SIDE_BUFFER = 5
 
@@ -17,11 +17,13 @@ class Skeleton:
         """
         """
         logging.info(f'Creating Skeleton')
+        self.queue = deque()
 
     def add(self, item)
         """add - should add to left or right of the main
         """
         logging.info(f'Adding {item=}')
+        
 
     def get(self):
         """
