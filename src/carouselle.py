@@ -9,6 +9,7 @@ from collections import deque
 
 
 SIDE_BUFFER = 5
+MAX_SIZE = 11          # assumes root and 5 on either side
 
 
 class Carouselle:
@@ -21,16 +22,20 @@ class Carouselle:
         self.carouselle = deque()
 
     def add_to_left(self, item):
-        """add
+        """add to a left, remove from the right to keep the size
         """
-        logging.info(f'Adding {item=}')
+        if len(self.carouselle) == MAX_SIZE:
+            logging.info(f'Removing from the right')
+            self.removeright()
         self.carouselle.appendleft(item)
 
     def add_to_right(self, item):
-        """add
+        """add to a left, remove from the right to keep the size
         """
-        logging.info(f'Adding {item=}')
-        self.carouselle.appendleft(item)
+        if len(self.carouselle) == MAX_SIZE:
+            logging.info(f'Removing from the left')
+            self.removeleft()
+        self.carouselle.append(item)
 
     def get(self):
         """get - get the middle item - this is to be displayed
@@ -53,6 +58,8 @@ class Carouselle:
     def __len__(self):
         return len(self.carouselle)
 
+    def __str__(self):
+        return str(self.carouselle)
 
 if __name__ == "__main__":
     x = Carouselle()
