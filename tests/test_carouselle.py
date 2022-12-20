@@ -58,4 +58,8 @@ def test_cycle_one_hundred(create_carouselle):
 
 
 def test_remove_one():
-    pytest.skip()    
+    pytest.skip()
+
+def test_len_zero(create_carouselle):
+    obj = create_carouselle
+    assert len(obj) == 0, f'Len of object {len(obj)} not equal 0'
