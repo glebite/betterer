@@ -22,7 +22,7 @@ class Carouselle:
     def __init__(self):
         """
         """
-        logging.info('Creating Skeleton')
+        logging.info('Creating Carouselle')
         self.carouselle = deque()
 
     def add_to_left(self, item):
