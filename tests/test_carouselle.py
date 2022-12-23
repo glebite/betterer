@@ -64,3 +64,11 @@ def test_remove_one():
 def test_len_zero(create_carouselle):
     obj = create_carouselle
     assert len(obj) == 0, f'Len of object {len(obj)} not equal 0'
+
+
+def test_get_success(create_carouselle):
+    obj = create_carouselle
+    obj.add_to_left(1)
+    obj.add_to_left(2)
+    obj.add_to_left(3)
+    assert obj.get() == 2, f'got unexpected value: {obj.get}'
