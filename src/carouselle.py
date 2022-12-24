@@ -17,7 +17,7 @@ MAX_SIZE = 11          # assumes root and 5 on either side
 
 
 class Carouselle:
-    """
+    """Carouselle
     """
     def __init__(self):
         """
@@ -27,6 +27,12 @@ class Carouselle:
 
     def add_to_left(self, item):
         """add to a left, remove from the right to keep the size
+
+        Parameters:
+        item - (?): the item to add
+
+        Returns:
+        n/a
         """
         if len(self.carouselle) == MAX_SIZE:
             logging.info('Removing from the right')
